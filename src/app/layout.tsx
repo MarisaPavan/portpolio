@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Venkata Marisa" }],
   alternates: {
-    canonical: "https://vm.dev/",
+    canonical: "https://portpolio-six-virid.vercel.app/",
   },
   robots: {
     index: true,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shopify Freelancer & Full-Time Developer | Senior Shopify Plus Engineer",
     description: "Senior Shopify Plus & Full-Stack Developer available for freelance projects, contract roles, and full-time hiring. Specializing in custom Shopify themes, Remix/Node apps, SAP ERP integrations, and headless storefronts.",
-    url: "https://vm.dev/",
+    url: "https://portpolio-six-virid.vercel.app/",
     siteName: "Venkata Marisa | Shopify Engineer Portfolio",
     type: "website",
   },

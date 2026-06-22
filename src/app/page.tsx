@@ -45,10 +45,10 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://vm.dev/#person",
+        "@id": "https://portpolio-six-virid.vercel.app/#person",
         "name": "Venkata Marisa",
         "jobTitle": "Senior Shopify Plus Developer & Full-Stack eCommerce Engineer",
-        "url": "https://vm.dev/",
+        "url": "https://portpolio-six-virid.vercel.app/",
         "sameAs": [
           "https://github.com/MarisaPavan",
           "https://linkedin.com/in/venkatamarisa"
@@ -74,8 +74,8 @@ export default function Home() {
       {
         "@type": "ProfessionalService",
         "name": "Venkata Marisa | Shopify Freelancer & eCommerce Consultant",
-        "image": "https://vm.dev/avatar.png",
-        "url": "https://vm.dev/",
+        "image": "https://portpolio-six-virid.vercel.app/avatar.png",
+        "url": "https://portpolio-six-virid.vercel.app/",
         "telephone": "+919542872635",
         "priceRange": "$$$",
         "address": {
@@ -84,7 +84,7 @@ export default function Home() {
         },
         "description": "Premium Shopify Plus theme engineering, custom app development, SAP ERP inventory synchronization, and headless storefront consulting available worldwide.",
         "provider": {
-          "@id": "https://vm.dev/#person"
+          "@id": "https://portpolio-six-virid.vercel.app/#person"
         },
         "offers": [
           {

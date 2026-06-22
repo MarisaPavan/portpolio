@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* Offset for sticky header */
+}
+
+:root {
+  /* Default Theme (Light Mode) */
+  --background: #ffffff;
+  --foreground: #242424;
+  --card-bg: #f3f2f1;
+  --card-border: #edebe9;
+  --card-hover-border: #0067b8;
+  
+  --text-heading: #111111;
+  --text-secondary: #505050;
+  --text-muted: #707070;
+  
+  --accent: #0067b8;
+  --accent-hover: #005da6;
+  --accent-light: rgba(0, 103, 184, 0.08);
+  --border: #edebe9;
+  --badge-bg: #f3f2f1;
+  --badge-text: #242424;
+}
+
+/* Dark Mode Theme overrides */
+.dark {
+  --background: #0b0c10;
+  --foreground: #f3f2f1;
+  --card-bg: #111217;
+  --card-border: #20222b;
+  --card-hover-border: #14b8a6;
+  
+  --text-heading: #ffffff;
+  --text-secondary: #a19f9d;
+  --text-muted: #797775;
+  
+  --accent: #14b8a6;
+  --accent-hover: #0d9488;
+  --accent-light: rgba(20, 184, 166, 0.1);
+  --border: #20222b;
+  --badge-bg: #1b1c23;
+  --badge-text: #f3f2f1;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-card-hover-border: var(--card-hover-border);
+  
+  --color-text-heading: var(--text-heading);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-border: var(--border);
+  --color-badge-bg: var(--badge-bg);
+  --color-badge-text: var(--badge-text);
+  
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-heading: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-mono: Consolas, monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition-property: background-color, color, border-color;
+  transition-duration: 300ms;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), var(--font-sans), sans-serif;
+}
+
+/* Custom Scrollbars in Obsidian Gray */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Subtly animated light-grid pattern matching cyber obsidian layout grids */
+.bg-grid-pattern {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+}
+
+/* Infinite Scrolling Marquee Ticker */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes liquid-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-liquid-flow {
+  animation: liquid-flow 3s linear infinite;
+}
